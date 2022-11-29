@@ -38,3 +38,17 @@ View 3: Create/Update Entries Form
 3. -- Cards with Edit/Delete buttons
 4. -- Create/Update Form
 5. -- Sort buttons
+
+
+--> Data to save in DB <--
+
+{
+  "(firebaseKeyGoesHere)": {
+  "term": "",
+  "firebaseKey": "",
+  "category": "",
+  "definition": "",
+  "time_submitted": "",
+  "uid": ""
+  }
+}
