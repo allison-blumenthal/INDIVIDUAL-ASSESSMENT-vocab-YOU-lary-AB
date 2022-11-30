@@ -8,7 +8,6 @@ const navBar = () => {
       <a class="navbar-brand" href="#">
         <img src=${logo} alt="VocabYOUlary logo" width="150" height="50"/>
       </a>
-      <button type="button" class="btn btn-success">Create Entry</button>
       <div id="logout-button"></div>
     </div>
   </nav>
