@@ -6,12 +6,13 @@ const navBar = () => {
   <nav class="navbar bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src=${logo} alt="VocabYOUlary logo"/>
+        <img src=${logo} alt="VocabYOUlary logo" width="150" height="50"/>
       </a>
+      <button type="button" class="btn btn-success">Create Entry</button>
+      <div id="logout-button"></div>
     </div>
   </nav>
 `;
-  document.getElementById('logo').innerHTML = domString;
 
   renderToDOM('#navigation', domString);
 };
