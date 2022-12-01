@@ -29,4 +29,4 @@ const showVocab = (array) => {
   renderToDOM('#library', domString);
 };
 
-export { emptyVocab, showVocab };
+export { showVocab, emptyVocab };
