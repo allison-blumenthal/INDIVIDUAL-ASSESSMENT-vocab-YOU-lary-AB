@@ -14,10 +14,10 @@ const addVocabForm = (obj = {}) => {
     <div class="form-group">
       <label for="category">Tech/Language Category</label>
       <select id="category" name="vocabCategory" value="${obj.category || ''}" required>
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="General Tech">General Tech</option>
+        <option value="HTML" ${obj.category === 'HTML' ? 'selected' : ''}>HTML</option>
+        <option value="CSS" ${obj.category === 'CSS' ? 'selected' : ''}>CSS</option>
+        <option value="JavaScript" ${obj.category === 'JavaScript' ? 'selected' : ''}>JavaScript</option>
+        <option value="General Tech" ${obj.category === 'General Tech' ? 'selected' : ''}>General Tech</option>
       </select>
     </div>
 
