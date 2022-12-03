@@ -6,14 +6,14 @@ const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
     // click event for submitting form for adding vocab card
-    if (e.target.dispatchEvent.includes('submit-vocab')) {
+    if (e.target.id.includes('submit-vocab')) {
       console.warn('clicked submit vocab', e.target.id);
 
       const payload = {
         term: document.querySelector('#term').value,
         category: document.querySelector('#category').value,
         definition: document.querySelector('#definition').value,
-        time_submitted: timestamp(),
+        time_submitted: timestamp,
         uid: user.uid
       };
 
