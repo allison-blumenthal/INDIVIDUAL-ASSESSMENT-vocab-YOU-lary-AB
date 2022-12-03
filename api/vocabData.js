@@ -20,4 +20,29 @@ const getVocab = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default getVocab;
+const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards/${firebaseKey}.json`,
+    {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+export { getVocab, deleteVocab, getSingleVocab };
