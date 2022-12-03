@@ -1,8 +1,8 @@
-import clearDOM from '../utils/clearDom';
+import clearDOM from '../utils/clearDOM';
 import renderToDOM from '../utils/renderToDOM';
 
 const emptyVocab = () => {
-  const domSTring = '<h1>No Vocab Cards</h1>';
+  const domString = '<h1>No Vocab Cards</h1>';
   renderToDOM('#library', domString);
 };
 
