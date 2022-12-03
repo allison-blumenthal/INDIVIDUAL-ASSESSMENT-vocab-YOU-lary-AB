@@ -26,6 +26,26 @@ const formEvents = (user) => {
         });
       });
     }
+
+    // click event for editing a vocab card
+    if (e.target.id.includes('update-vocab')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      console.warn('clicked update vocab', e.target.id);
+      console.warn(firebaseKey);
+
+      const payload = {
+        term: document.querySelector('#term').value,
+        category: document.querySelector('#category').value,
+        definition: document.querySelector('#definition').value,
+        time_submitted: timestamp,
+        uid: user.uid,
+        firebaseKey,
+      };
+
+      updateVocab(payload).then(() => {
+        getVocab(user.uid).then(showVocab);
+      });
+    }
   });
 };
 

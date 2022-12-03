@@ -62,7 +62,7 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// patch vocab card with firebaseKey
+// update vocab card
 const updateVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_cards/${payload.firebaseKey}.json`, {
     method: 'PATCH',
