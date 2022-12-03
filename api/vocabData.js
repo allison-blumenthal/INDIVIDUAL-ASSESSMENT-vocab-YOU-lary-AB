@@ -108,7 +108,7 @@ const getCSSVocab = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// get html vocab
+// get JS vocab
 const getJSVocab = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -118,13 +118,13 @@ const getJSVocab = (uid) => new Promise((resolve, reject) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      const js = Object.values(data).filter((obj) => obj.category === 'HTML');
+      const js = Object.values(data).filter((obj) => obj.category === 'JavaScript');
       resolve(js);
     })
     .catch(reject);
 });
 
-// get html vocab
+// get tech vocab
 const getTechVocab = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -134,7 +134,7 @@ const getTechVocab = (uid) => new Promise((resolve, reject) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      const tech = Object.values(data).filter((obj) => obj.category === 'HTML');
+      const tech = Object.values(data).filter((obj) => obj.category === 'General Tech');
       resolve(tech);
     })
     .catch(reject);

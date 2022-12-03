@@ -17,6 +17,7 @@ const filterBtnEvents = (user) => {
   });
 
   document.querySelector('#tech-button').addEventListener('click', () => {
+    console.warn('clicked general tech button');
     getTechVocab(user.uid).then(showVocab);
   });
 };
