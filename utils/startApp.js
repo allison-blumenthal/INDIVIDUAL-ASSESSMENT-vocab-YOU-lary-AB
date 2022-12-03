@@ -5,12 +5,16 @@ import { getVocab } from '../api/vocabData';
 import { showVocab } from '../pages/vocabCards';
 import domEvents from '../events/domEvents';
 import formEvents from '../events/formEvents';
+import filterBtnEvents from '../events/filterBtnEvents';
+import filterBtnRow from '../components/shared/filterBtnRow';
 
 const startApp = (user) => {
   domBuilder(user);
   domEvents(user);
   formEvents(user);
   navBar();
+  filterBtnRow();
+  filterBtnEvents(user);
   logoutButton();
 
   getVocab(user.uid).then((vocab) => showVocab(vocab));

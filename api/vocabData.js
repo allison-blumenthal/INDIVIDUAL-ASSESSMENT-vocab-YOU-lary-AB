@@ -76,6 +76,70 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// get html vocab
+const getHTMLVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const html = Object.values(data).filter((obj) => obj.category === 'HTML');
+      resolve(html);
+    })
+    .catch(reject);
+});
+
+// get css vocab
+const getCSSVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const css = Object.values(data).filter((obj) => obj.category === 'CSS');
+      resolve(css);
+    })
+    .catch(reject);
+});
+
+// get JS vocab
+const getJSVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const js = Object.values(data).filter((obj) => obj.category === 'JavaScript');
+      resolve(js);
+    })
+    .catch(reject);
+});
+
+// get tech vocab
+const getTechVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const tech = Object.values(data).filter((obj) => obj.category === 'General Tech');
+      resolve(tech);
+    })
+    .catch(reject);
+});
+
 export {
-  getVocab, deleteVocab, getSingleVocab, createVocab, updateVocab
+  getVocab, deleteVocab, getSingleVocab, createVocab, updateVocab, getHTMLVocab, getCSSVocab, getJSVocab, getTechVocab
 };
