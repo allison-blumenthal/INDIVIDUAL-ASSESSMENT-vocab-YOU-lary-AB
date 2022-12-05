@@ -5,8 +5,11 @@
 [View App](https://blumenthal-vocab-you-lary.netlify.app/)
 
 ## Get Started 
+```
 $ git clone git@github.com:allison-blumenthal/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary-AB.git
+
 $ cd INDIVIDUAL-ASSESSMENT-vocab-YOU-lary-AB
+```
 
 ## About the User 
 - The ideal user for this application is a coding student.
@@ -25,7 +28,7 @@ https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://blumenthal-vocab-you-lary.netlify.app/)
 - [Wireframe](https://docs.google.com/presentation/d/1d_CY6ux7L26Ft-ef9gs1dnx38CCsWRFtSJTZ1dn3Huk/edit?usp=sharing)
-- [ERD] (https://dbdiagram.io/d/63857674c9abfc611175c760) 
+- [ERD](https://dbdiagram.io/d/63857674c9abfc611175c760) 
 
 ## Code Snippet
 
@@ -55,8 +58,8 @@ const showVocab = (array) => {
 ```
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
-<img width="1148" alt="Screenshot of Cards" src="cardsScreenshot.png">
-<img width="1148" alt="Screenshot of Form" src="formScreenshot.png">
+<img width="1148" alt="Screenshot of Cards" src="assets/cardsScreenshot.png">
+<img width="1148" alt="Screenshot of Form" src="assets/formScreenshot.png">
 
 ## Contributors
 - [Allison Blumenthal](https://github.com/allison-blumenthal)
