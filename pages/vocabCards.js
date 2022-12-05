@@ -20,8 +20,8 @@ const showVocab = (array) => {
           <div class="card-body">
             <h5 class="card-title">${item.category}</h5>
             <p class="card-text">${item.definition}</p>
-            <a href="#" class="btn btn-primary card-btn" id="edit-vocab-btn--${item.firebaseKey}">Edit</a>
-            <a href="#" class="btn btn-danger card-btn" id="delete-vocab-btn--${item.firebaseKey}">Delete</a>
+            <a href="#" class="btn btn-primary card-btn edit" id="edit-vocab-btn--${item.firebaseKey}">Edit</a>
+            <a href="#" class="btn btn-danger card-btn delete" id="delete-vocab-btn--${item.firebaseKey}">Delete</a>
           </div>
         </div>
     `;

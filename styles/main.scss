@@ -19,7 +19,7 @@ body {
   font-weight: bold;
 }
 
-#google-auth:hover, .filter-btn:hover, .create-btn:hover {
+#google-auth:hover, .filter-btn:hover, .create-btn:hover, .card-btn:hover {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -50,7 +50,7 @@ body {
 .filter-btn {
   background-color: #ffd60a;
   border: #ffd60a;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .create-btn {
-  color: black;
+  color: white;
   font-weight: bold;
   background-color: #e85d04;
   border: #e85d04;
@@ -70,16 +70,19 @@ body {
 .card {
   display: inline-block;
   margin: 10px;
+  border: none;
 }
 
 #card-style {
-  background-color: #ffd60a;
-  color: #001d3d;
+  color: white;
+  background-color: black;
 }
 
 .card-header {
   font-size: x-large;
   font-weight: bold;
+  color: black;
+  background-color: pink;
 }
 
 .card-title {
@@ -94,5 +97,14 @@ body {
 .card-btn {
   font-size: small;
   font-weight: bolder;
-  color: black;
+  color: white;
+  border: none;
+}
+
+.edit {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
 }
