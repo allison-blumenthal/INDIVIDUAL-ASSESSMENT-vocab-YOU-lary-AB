@@ -7,8 +7,6 @@ const formEvents = (user) => {
     e.preventDefault();
     // click event for submitting form for adding vocab card
     if (e.target.id.includes('submit-vocab')) {
-      console.warn('clicked submit vocab', e.target.id);
-
       const payload = {
         term: document.querySelector('#term').value,
         category: document.querySelector('#category').value,
@@ -17,7 +15,6 @@ const formEvents = (user) => {
         uid: user.uid
       };
 
-      console.warn(payload);
       createVocab(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
 
@@ -30,8 +27,6 @@ const formEvents = (user) => {
     // click event for editing a vocab card
     if (e.target.id.includes('update-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
-      console.warn('clicked update vocab', e.target.id);
-      console.warn(firebaseKey);
 
       const payload = {
         term: document.querySelector('#term').value,
