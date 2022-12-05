@@ -15,7 +15,7 @@ const showVocab = (array) => {
   let domString = '';
   array.forEach((item) => {
     domString += `
-      <div class="card">
+      <div class="card" id="card-style">
         <h5 class="card-header">${item.term}</h5>
         <div class="card-body">
           <h5 class="card-title">${item.category}</h5>
