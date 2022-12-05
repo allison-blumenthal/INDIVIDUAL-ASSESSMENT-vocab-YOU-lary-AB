@@ -34,7 +34,9 @@ body {
 }
 
 #btn-row {
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -43,4 +45,16 @@ body {
   background-color: #ffd60a;
   color: #001d3d;
   display: flex;
+}
+
+.filter-btn {
+  background-color: #ffd60a;
+  border: #ffd60a;
+  color: black;
+  font-weight: bold;
+}
+
+.zero {
+  padding: 0px;
+  margin: 0px;
 }
