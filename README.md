@@ -1,80 +1,65 @@
-# Q2 - Individual Assessment: Vocab-YOU-lary
+# "VocabYOUlary" [![Netlify Status](https://api.netlify.com/api/v1/badges/6ea9bf80-ebe1-4973-868b-4b1bb6002c72/deploy-status)](https://app.netlify.com/sites/blumenthal-vocab-you-lary/deploys)
 
-[VIEW PROJECT INSTRUCTIONS](./PROJECT_INSTRUCTIONS.MD)
+"VocabYOUlary" is an app for displaying, creating, updating, and deleting a user's personal coding/tech-related vocab cards.
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [Console messages](#console-messages)
-    - [Including images with webpack](#including-images-with-webpack)
-    - [Importing CSS](#importing-cssscss)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
+[View App](https://blumenthal-vocab-you-lary.netlify.app/)
 
-## Get Started
+## Get Started 
+```
+$ git clone git@github.com:allison-blumenthal/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary-AB.git
 
-1. Clone your new repo to your local machine
-
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. Rename the `.sample.env` file to `.env` file. The final file name should be `.env`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
-
-### If you see this, you are set to go!
-![lit-screen](https://user-images.githubusercontent.com/29741570/190486162-27e9032d-266f-4962-a85c-fc40c58f33db.png)
-
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
-- You will no longer be using the `hs -o` command. To start your server, you will run `npm start`
-
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw an error in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however for messages. These need to all be removed before pushing to production unless they contain vital info for the user/developer.
-
-![notacceptable](https://user-images.githubusercontent.com/29741570/190486163-3dd8640f-5dda-4f73-9436-6020fc9e00c4.png)
-
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
-
-```js
-import cat from './assets/cat.jpg';
-
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
-
-document.getElementById('cat').innerHTMl = domString;
+$ cd INDIVIDUAL-ASSESSMENT-vocab-YOU-lary-AB
 ```
 
-### Importing CSS/SCSS
-**NOTE:** We will be using SCSS files. They are used the same way your CSS files work, with some added benefits that we will discuss later.
+## About the User 
+- The ideal user for this application is a coding student.
+- They are working towards a career in tech, and want to have a place to list important terms they'd like to remember or study.
+- This app allows the user to create as many vocab cards as they'd like, sort them by category, edit them, and delete when no longer needed. 
 
-Since Webpack is making the connection to the JS and CSS for us and we are no longer manually adding links or script tags to our HTML, we have to get our styles to the application some way...
+## Features 
+- Google authentication allows the user to log into their own personal collection of cards
+- When a new vocab term is added, the information is added to the user's database and renders a new card to the DOM
+- Filter buttons allow the user to sort by category
+- Edit and Delete button allow the user to make changes to their card collection
 
-Here is how we add our styles using webpack:
+## Video Walkthrough of APP NAME
+https://www.loom.com/share/64e4e450069a4d1a9bb0caad3b642bef
 
-```js
-import '../styles/main.scss';
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](https://blumenthal-vocab-you-lary.netlify.app/)
+- [Wireframe](https://docs.google.com/presentation/d/1d_CY6ux7L26Ft-ef9gs1dnx38CCsWRFtSJTZ1dn3Huk/edit?usp=sharing)
+- [ERD](https://dbdiagram.io/d/63857674c9abfc611175c760) 
 
-const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+## Code Snippet
+
+```
+const showVocab = (array) => {
+  clearDOM();
+
+  const btnString = '<button type="button" class="btn btn-success create-btn" id="create-vocab-btn">Create Vocab Card</button>';
+  renderToDOM('#create-button', btnString);
+
+  let domString = '';
+  array.forEach((item) => {
+    domString += `
+        <div class="card" style="width: 18rem;" id="card-style">
+          <h5 class="card-header">${item.term}</h5>
+          <div class="card-body">
+            <h5 class="card-title">${item.category}</h5>
+            <p class="card-text">${item.definition}</p>
+            <a href="#" class="btn btn-primary card-btn edit" id="edit-vocab-btn--${item.firebaseKey}">Edit</a>
+            <a href="#" class="btn btn-danger card-btn delete" id="delete-vocab-btn--${item.firebaseKey}">Delete</a>
+          </div>
+        </div>
+    `;
+  });
+  renderToDOM('#library', domString);
 };
-
-init();
 ```
 
-### Deploying on Netlify
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1148" alt="Screenshot of Cards" src="assets/cardsScreenshot.png">
+<img width="1148" alt="Screenshot of Form" src="assets/formScreenshot.png">
 
-- Build Command: `npm run build`
-- Publish directory: `dist`
-- Add Environmental Variables (NOT REQUIRED for Apps that do not use API Keys, etc)
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-
-- Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-        
-## More Info and Resources on Webpack
-- Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
-- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+## Contributors
+- [Allison Blumenthal](https://github.com/allison-blumenthal)
