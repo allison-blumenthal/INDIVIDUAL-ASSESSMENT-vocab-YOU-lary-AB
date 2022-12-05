@@ -3,8 +3,44 @@
 
 
 body {
-  background-color: gray;
-  color: black;
+  background-color: #003566;
+  color: whitesmoke;
   text-align: center;
-  margin-top: 100px;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+#google-auth {
+  margin: 0px 10px;
+  background-color: white;
+  color: black;
+  border: white;
+  font-weight: bold;
+}
+
+#vocab-logo {
+  border-radius: 4%;
+  margin: 10px;
+  padding: 5px;
+}
+
+#navbar-style {
+  background-color: #003566;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  margin: 0px;
+}
+
+#btn-row {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#card-style {
+  background-color: #ffd60a;
+  color: #001d3d;
+  display: flex;
 }
