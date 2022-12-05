@@ -72,6 +72,12 @@ body {
   margin: 10px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .card {
   display: inline-block;
   margin: 10px;
