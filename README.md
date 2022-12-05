@@ -23,7 +23,7 @@ $ cd INDIVIDUAL-ASSESSMENT-vocab-YOU-lary-AB
 - Edit and Delete button allow the user to make changes to their card collection
 
 ## Video Walkthrough of APP NAME
-https://www.loom.com/share/64e4e450069a4d1a9bb0caad3b642bef
+- [Loom App Walk-thru](https://www.loom.com/share/64e4e450069a4d1a9bb0caad3b642bef)
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://blumenthal-vocab-you-lary.netlify.app/)
