@@ -1,73 +1,75 @@
 {
   "-NI4qfmFpkmwKzZfkoHo": {
-      "term":"Total",
+      "term":"Array",
       "firebaseKey":"-NI4qfmFpkmwKzZfkoHo",
-      "category":"CSS",
-      "definition":"Robust empowering installation","time_submitted":"1670086776475",
+      "category":"JavaScript",
+      "definition":"Arrays are containers that hold variables; they're used to group together similar variables. You can think of arrays like shelves at a pet store. The array would be the shelf, and the animals in cages are the variables inside.","time_submitted":"1670086776475",
       "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmHUwdPjpOXng54": {
-    "term":"multi-tasking",
+    "term":"Camel Case",
     "firebaseKey":"-NI4qfmHUwdPjpOXng54",
-    "category":"HTML",
-    "definition":"Up-sized responsive projection","time_submitted":"1670086776478",
+    "category":"General Tech",
+    "definition":"Variables should be named using camel case, meaning the first word of the name is lowercase and each new word after that is capitalized. It's called camel case because when it was originally written as CamelCase, the capital Cs look like the humps on a camel. iPhone, eBay, YouTube, and of course, iD in “iD Tech” are real-world examples of camel casing!",
+    "time_submitted":"1670086776478",
     "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmIFqc0co9Bb_XR": {
-    "term":"Sharable",
+    "term":"API",
     "firebaseKey":"-NI4qfmIFqc0co9Bb_XR",
-    "category":"JavaScript",
-    "definition":"Function-based directional projection","time_submitted":"1670086776473",
+    "category":"General Tech",
+    "definition":"Application Programming Interface (API) is a set of rules, routines, and protocols to build software applications. APIs help in communication with third party programs or services, which can be used to build different software. Companies such as Facebook and Twitter actively use APIs to help developers gain easier access to their services.","time_submitted":"1670086776473",
     "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmKGBapjPbX6O9O": {
-    "term":"tangible",
+    "term":"Boolean",
     "firebaseKey":"-NI4qfmKGBapjPbX6O9O",
-    "category":"CSS",
-    "definition":"Monitored directional moratorium","time_submitted":"1670086776477",
+    "category":"General Tech",
+    "definition":"A Boolean expression or Boolean logic is an expression used for creating statements that are either TRUE or FALSE. Boolean expressions use AND, OR, XOR, NOT and NOR operators with conditional statements in programming, search engines, algorithms, and formulas. Boolean expressions are also called comparison expressions, conditional expressions, and relational expressions.","time_submitted":"1670086776477",
     "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmM-MRY8MPg5lc0": {
-    "term":"Universal",
+    "term":"href",
     "firebaseKey":"-NI4qfmM-MRY8MPg5lc0",
     "category":"HTML",
-    "definition":"Balanced user-facing algorithm","time_submitted":"1670086776472",
+    "definition":"Links tell the browser where to go using an href attribute, which stores a URL.","time_submitted":"1670086776472",
     "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmO_735EAuQI1Gq": {
-    "term":"Adaptive",
+    "term":"Hardcode",
     "firebaseKey":"-NI4qfmO_735EAuQI1Gq",
-    "category":"JavaScript",
-    "definition":"Streamlined client-driven contingency","time_submitted":"1670086776476",
-    "uid":"OMtZ4lItNSQpYkszVJiTuS72Iqu1"
+    "category":"HTML",
+    "definition":"In computer programming, the term hard code or hardcode is used to describe code that is not likely to change. Hardcoded features are built into hardware or software in such a way so that they cannot be modified later on. For example, if font size 10 is hardcoded in the software, then it might not change for a long time.","time_submitted":"1670086776476",
+    "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmQNoYu65hX4el_": {
-    "term":"hierarchy",
+    "term":"Pseudo-Class",
     "firebaseKey":"-NI4qfmQNoYu65hX4el_",
     "category":"CSS",
-    "definition":"Stand-alone 24/7 website",
+    "definition":"A pseudo-class works similarly to a regular CSS class, except it's not explicitly declared in the HTML. A pseudo-class is added to the anchor element.",
     "time_submitted":"1670086776466",
-    "uid":"OMtZ4lItNSQpYkszVJiTuS72Iqu1"
+    "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmSiocuQtFrTvvu": {
-    "term":"encoding",
+    "term":"Variable",
     "firebaseKey":"-NI4qfmSiocuQtFrTvvu",
-    "category":"HTML",
-    "definition":"Integrated 3rd generation benchmark","time_submitted":"1670086776455",
-    "uid":"OMtZ4lItNSQpYkszVJiTuS72Iqu1"
+    "category":"JavaScript",
+    "definition":"A variable is a location that stores temporary data within a program which can be modified, store and display whenever need. For example, if we have an integer variable with a name XYZ and it stores a value 10. If the variable is again initiated with a different value, it will store the new value. So if XYZ=9 is implemented, the variable location of XYZ will discard the value 10 and store the new value, which is 9.","time_submitted":"1670086776455",
+    "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmUK9bQ7n09C0on": {
-    "term":"artificial intelligence",
+    "term":"Children",
     "firebaseKey":"-NI4qfmUK9bQ7n09C0on",
-    "category":"JavaScript",
-    "definition":"Integrated object-oriented success","time_submitted":"1670086776433",
-    "uid":"OMtZ4lItNSQpYkszVJiTuS72Iqu1"
+    "category":"HTML",
+    "definition":"An element that is an immediate descendent of another element or nested within another element is called a child. These become useful when using CSS child selectors and psuedo-elements.",
+    "time_submitted":"1670086776433",
+    "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   },
   "-NI4qfmWLjH8jS8JqJSl": {
-    "term":"even-keeled",
+    "term":"Class Selector",
     "firebaseKey":"-NI4qfmWLjH8jS8JqJSl",
     "category":"CSS",
-    "definition":"Persevering bottom-line installation","time_submitted":"1670086776422",
-    "uid":"OMtZ4lItNSQpYkszVJiTuS72Iqu1"
+    "definition":"The selector targets an element by its class name. So every element with a class of “navigation” will receive the styles in question.","time_submitted":"1670086776422",
+    "uid":"NCvOpKH0qkQ8WyREaXTLWfgsWOf1"
   }
 }
