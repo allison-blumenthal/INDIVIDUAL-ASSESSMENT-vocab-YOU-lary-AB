@@ -11,6 +11,11 @@ body {
   font-family: 'Solway', serif;
 }
 
+.login-page {
+  margin: 50px;
+  color: #003566;
+}
+
 #google-auth {
   margin: 0px 10px;
   background-color: black;
@@ -19,7 +24,7 @@ body {
   font-weight: bold;
 }
 
-#google-auth:hover, .filter-btn:hover, .create-btn:hover, .card-btn:hover {
+#google-auth:hover, .filter-btn:hover, .create-btn:hover, .card-btn:hover, .submit:hover {
   background-color: whitesmoke;
   color: black;
   font-weight: bold;
@@ -108,4 +113,17 @@ body {
 
 .delete {
   background-color: #ba181b;
+}
+
+
+.form-group {
+  margin: 25px;
+  color: #003566;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.submit {
+  background-color: #2d6a4f;
+  border: none;
 }

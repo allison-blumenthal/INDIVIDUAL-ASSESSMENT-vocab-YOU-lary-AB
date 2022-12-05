@@ -3,9 +3,12 @@ import { signIn } from '../../utils/auth';
 // GOOGLE LOGIN BUTTON
 const loginPage = () => {
   const domString = `
-    <h1>Welcome to VocabYOUlary!</h1>
-    <h5>Where YOU make the vocab that counts.</h5>
-    <button id="google-auth" class="btn btn-danger">GOOGLE LOGIN</button>`;
+    <div class="login-page">
+      <h2>Welcome to</h2>
+      <h1>VocabYOUlary!</h1>
+      <h5>Your very own vocab study site.</h5>
+      <button id="google-auth" class="btn btn-danger">LOGIN</button>
+    </div>`;
 
   document.querySelector('#app').innerHTML = domString;
   document.querySelector('#google-auth').addEventListener('click', signIn);
