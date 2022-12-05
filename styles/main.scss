@@ -1,32 +1,43 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
-
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
 
 body {
-  background-color: #003566;
+  background-color: #d8e2dc;
   color: whitesmoke;
   text-align: center;
   margin: 0px;
   padding: 0px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Solway', serif;
+}
+
+.login-page {
+  margin: 50px;
+  color: #003566;
 }
 
 #google-auth {
   margin: 0px 10px;
-  background-color: white;
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+#google-auth:hover, .filter-btn:hover, .create-btn:hover, .card-btn:hover, .submit:hover {
+  background-color: whitesmoke;
   color: black;
-  border: white;
   font-weight: bold;
 }
 
 #vocab-logo {
-  border-radius: 4%;
+  border-radius: 10px;
   margin: 10px;
   padding: 5px;
 }
 
 #navbar-style {
-  background-color: #003566;
+  background-color: #d8e2dc;
   margin: 0px;
   padding: 0px;
   max-width: 100%;
@@ -41,20 +52,78 @@ body {
   justify-content: space-around;
 }
 
-#card-style {
-  background-color: #ffd60a;
-  color: #001d3d;
-  display: flex;
-}
-
 .filter-btn {
-  background-color: #ffd60a;
-  border: #ffd60a;
-  color: black;
+  background-color: #003566;
+  border: #003566;
+  color: whitesmoke;
   font-weight: bold;
 }
 
 .zero {
   padding: 0px;
   margin: 0px;
+}
+
+.create-btn {
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #2d6a4f;
+  border: #3c6e71;
+  margin: 10px;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  border: none;
+}
+
+#card-style {
+  color: whitesmoke;
+  background-color: #003566;
+}
+
+.card-header {
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.card-title {
+  font-size: large;
+  font-weight: bolder;
+  color: #b7e4c7;
+}
+
+.card-text {
+  font-size: medium;
+}
+
+.card-btn {
+  font-size: small;
+  font-weight: bolder;
+  color: whitesmoke;
+  border: none;
+}
+
+.edit {
+  background-color: #2d6a4f;
+}
+
+.delete {
+  background-color: #ba181b;
+}
+
+
+.form-group {
+  margin: 25px;
+  color: #003566;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.submit {
+  background-color: #2d6a4f;
+  border: none;
 }

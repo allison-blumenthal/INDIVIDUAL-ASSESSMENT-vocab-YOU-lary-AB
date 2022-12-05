@@ -25,7 +25,7 @@ const addVocabForm = (obj = {}) => {
       <label for="definition">Vocab Definition</label>
       <input type="text" class="form-control" id="definition" aria-describedby="vocabDefinition"  placeholder="Enter Vocab Definition" value="${obj.definition || ''}" required>
     </div>
-    <button type="submit" class="btn btn-primary">Submit Vocab
+    <button type="submit" class="btn btn-primary submit">Submit Vocab
     </button>
   </form>`;
 
