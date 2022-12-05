@@ -17,13 +17,10 @@ const domEvents = (user) => {
     }
     // click event for showing form for adding vocab card
     if (e.target.id.includes('create-vocab-btn')) {
-      console.warn('create vocab card');
       addVocabForm({}, user.uid);
     }
     // click event for editing a vocab card
     if (e.target.id.includes('edit-vocab-btn')) {
-      console.warn('edit vocab card', e.target.id);
-      console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
 
       getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj, user.uid));

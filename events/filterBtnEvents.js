@@ -17,12 +17,10 @@ const filterBtnEvents = (user) => {
   });
 
   document.querySelector('#tech-button').addEventListener('click', () => {
-    console.warn('clicked general tech button');
     getTechVocab(user.uid).then(showVocab);
   });
 
   document.querySelector('#all-button').addEventListener('click', () => {
-    console.warn('clicked all button');
     getVocab(user.uid).then(showVocab);
   });
 };
